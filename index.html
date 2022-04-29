@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,19 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Clicker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h2>Money:<span class="score">0000</span></h2>
+        </div>
+    </header>
+
     <h1>Your Coffee Clicker</h1>
 
     <main>
         <section class="coffee">
-            <div id="drip"></div>
-            <div id="espresso"></div>
-            <div id="cortado"></div>
-            <div id="cappucino"></div>
-            <div id="latte"></div>
-            <div id="tea"></div>
+            <div id="drip"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
+            <div id="espresso"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
+            <div id="cortado"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
+            <div id="cappucino"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
+            <div id="latte"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
+            <div id="tea"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
         </section>
 
         <form class="textBox">
@@ -26,7 +35,7 @@
             Hi
         </form>
 
-        
+
 
     </main>    
 </body>
