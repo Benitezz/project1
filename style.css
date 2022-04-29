@@ -1,0 +1,27 @@
+h1{
+   text-align: center;
+   padding: 20px;
+}
+
+.coffee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drip, #espresso, #cortado, #cappucino, #latte, #tea{
+
+    width: 50px;
+    border: 5px solid black;
+    color: blue;
+    padding: 30px;
+    margin: 30px;
+}
+
+.textBox{
+    border: 2px solid black;
+    margin: 100px 400px 0px 400px;
+    padding: 30px;
+    background-color: lightgray;
+    text-align: center;
+}
