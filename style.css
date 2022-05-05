@@ -49,6 +49,18 @@ h1{
     padding: 70px;
     background-color: lightgray;
     text-align: center;
+    overflow-y: scroll;
+    display: flexbox;
+}
+
+.buttonContainer{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 

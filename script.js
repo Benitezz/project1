@@ -1,4 +1,9 @@
 let money = 0;
+const but1 = document.querySelector('#upgrade');
+const but2 = document.querySelector('#noUpgrade');
+let textBox = document.querySelector('.textBox');
+but1.style.display = 'none';
+but2.style.display = 'none';
 
 class Coffee {
     constructor(name, value){
@@ -14,6 +19,21 @@ let cappucino = new Coffee('Cappucino', 5);
 let latte = new Coffee('Latte', 6)
 let tea = new Coffee('Tea', 7);
 
+let coffeeValues = [];
+coffeeValues.push(drip);
+coffeeValues.push(espresso);
+coffeeValues.push(cortado);
+coffeeValues.push(cappucino);
+coffeeValues.push(latte);
+coffeeValues.push(tea);
+
+coffeeValues.forEach((element,index,array) =>{
+    coffeeValues[index].value=coffeeValues[index].value*2;
+    console.log(coffeeValues[index].value)
+    // coffeeValues = coffeeValues[index].value * 2;
+})
+
+
 
 // document.getElementById("drip").addEventListener("click",sellDrip)
 
@@ -21,16 +41,6 @@ let tea = new Coffee('Tea', 7);
 //     money = money + drip;
 //     let score = document.querySelector(".score");
 //     score.innerHTML = (parseInt(score.innerHTML)+ drip).toString().padStart(4,"0")
-//     console.log(money)
-//     return money;
-// }
-
-// document.getElementById("espresso").addEventListener("click",sellEspresso)
-
-// function sellEspresso(){
-//     money = money + espresso;
-//     let score = document.querySelector(".score");
-//     score.innerHTML = (parseInt(score.innerHTML)+ espresso).toString().padStart(4,"0")
 //     console.log(money)
 //     return money;
 // }
@@ -60,10 +70,31 @@ document.getElementById("tea").addEventListener("click",function(){
     sellCoffee(tea.value)
 })
 
+function upgradeChoice (){
+    textBox.innerHTML = 'You have upgraded your shop!'
+
+}
+
+
 function sellCoffee(cost){
     money = money + cost;
     let score = document.querySelector(".score");
     score.innerHTML = (parseInt(score.innerHTML)+ cost).toString().padStart(4,"0")
     console.log(money)
-    return money;
+    // return money;
+   if(money >= 100 && money <= 200){
+       textBox.innerHTML = `You have $${money}`
+       but1.style.display = 'block';
+       but2.style.display = 'block';
+
+        but1.addEventListener('click', () => {
+            console.log('The button had been clicked');
+            but1.style.display = 'none';
+            but2.style.display = 'none';
+        })
+   }else{
+    but1.style.display = 'none';
+    but2.style.display = 'none';
+   }
 }
+
