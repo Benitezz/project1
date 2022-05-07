@@ -2,6 +2,8 @@
 
 Coffee Clicker Game
 
+https://benitezz.github.io/project1/
+
 1. I wanted my game to be an interactive clickable game with no alerts or prompts.
 2. The objective is to click the buttons as much as you can in order to make more money.
 3. There are bonus's for reaching certain milestones that will multiply your earnings.
