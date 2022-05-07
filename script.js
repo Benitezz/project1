@@ -122,7 +122,6 @@ function addUpgrade(){
 }
 
 
-// let mugBonus2 = document.querySelector('.mug2');
 but1.addEventListener('click', ()=>{
     upgradeChoice();
     addUpgrade();
@@ -151,7 +150,7 @@ function sellCoffee(cost){
     score.innerHTML = (parseInt(score.innerHTML)+ cost).toString().padStart(4,"0")
     let storesOwned = document.querySelector(".stores");
     storesOwned.innerHTML = (parseInt(upgradeStatus)).toString().padStart(4,"0")
-    // return money;
+    
     
    if(money >= 100 && money <= 200 && upgradeStatus != 1){
        textBox.innerHTML = `You have $${money} and a chance to buy a new store!`
@@ -251,6 +250,4 @@ function sellCoffee(cost){
 
 }
 
-// but1.style.display = 'none';
-// but2.style.display = 'none';
 
