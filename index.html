@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Clicker</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -23,25 +23,31 @@
     </header>
 
     <h1>
-        <img src="pictures/logo1-coffee.gif" alt="Hot Coffee">
+        <img class="mug1" src="pictures/logo1-coffee.gif" alt="Hot Coffee">
         Your Coffee Clicker 
-        <img src="pictures/logo1-coffee.gif" alt="Hot Coffee">
+        <img class="mug2" src="pictures/logo1-coffee.gif" alt="Hot Coffee">
     </h1>
     
 
     <main>
         <section class="coffee">
-            <div id="drip"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
-            <div id="espresso"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
-            <div id="cortado"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
-            <div id="cappucino"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
-            <div id="latte"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
-            <div id="tea"><img class="coffeeImg" src="pictures/Coffee.png" alt="hot coffee"></div>
-            <div id="dripText">Drip Sold:<span id="dripSold">0</span></div>
+            <div id="dripValue">Drip Value: <span id="dripPrice"></span></div>
+            <div id="espressoValue">Espresso Value: <span id="espressoPrice"></span></div>
+            <div id="cortadoValue">Cortado Value: <span id="cortadoPrice"></span></div>
+            <div id="cappuccinoValue">Cappuccino Value: <span id="cappuccinoPrice"></span></div>
+            <div id="latteValue">Latte Value <span id="lattePrice"></span></div>
+            <div id="teaValue">Tea Value <span id="teaPrice"></span></div>
+            <div id="drip"><img class="coffeeImg" src="pictures/drip.png" alt="hot coffee"></div>
+            <div id="espresso"><img class="coffeeImg" src="pictures/espresso.png" alt="hot coffee"></div>
+            <div id="cortado"><img class="coffeeImg" src="pictures/cortado.png" alt="hot coffee"></div>
+            <div id="cappucino"><img class="coffeeImg" src="pictures/cappuccino.png" alt="hot coffee"></div>
+            <div id="latte"><img class="coffeeImg" src="pictures/latte.png" alt="hot coffee"></div>
+            <div id="tea"><img class="coffeeImg" src="pictures/tea.png" alt="hot coffee"></div>
+            <div id="dripText">Drip Coffee Sold:<span id="dripSold">0</span></div>
             <div id="espressoText">Espresso Sold:<span id="espressoSold">0</span></div>
-            <div id="cortadoText">Cortado's Sold:<span id="cortadoSold">0</span></div>
-            <div id="cappucinoText">Cappucino's Sold:<span id="cappucinoSold">0</span></div>
-            <div id="latteText">Latte's Sold:<span id="latteSold">0</span></div>
+            <div id="cortadoText">Cortados Sold:<span id="cortadoSold">0</span></div>
+            <div id="cappucinoText">Cappuccinos Sold:<span id="cappucinoSold">0</span></div>
+            <div id="latteText">Lattes Sold:<span id="latteSold">0</span></div>
             <div id="teaText">Tea Sold:<span id="teaSold">0</span></div>
         </section>
         <!-- <section class="coffeeInfo">
@@ -64,5 +70,6 @@
 
 
     </main>    
+    <script src="script.js"></script>
 </body>
 </html>

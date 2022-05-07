@@ -25,13 +25,17 @@ h1{
     align-items: center;
     flex-wrap: wrap;
 }
-
-/* .cofeeInfo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#dripValue, #espressoValue, #cortadoValue, #cappuccinoValue, #latteValue, #teaValue{
+    width: 60px;
+    padding: 0px;
+    margin: 0px 60px 0 70px;
     flex-direction: row;
-} */
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+
+}
 
 #dripText, #espressoText, #cortadoText, #cappucinoText, #latteText, #teaText{
     width: 60px;
