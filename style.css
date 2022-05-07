@@ -10,6 +10,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: right;
+    
+    
 }
 
 h1{
@@ -21,6 +23,25 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .cofeeInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} */
+
+#dripText, #espressoText, #cortadoText, #cappucinoText, #latteText, #teaText{
+    width: 60px;
+    padding: 0px;
+    margin: 0px 60px 0 70px;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 #drip, #espresso, #cortado, #cappucino, #latte, #tea{
@@ -49,18 +70,18 @@ h1{
     padding: 70px;
     background-color: lightgray;
     text-align: center;
-    overflow-y: scroll;
+    
     display: flexbox;
 }
 
 .buttonContainer{
     width: 80%;
-    max-width: 1000px;
+    max-width: 400px;
     margin: 0 auto;
     padding-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 
